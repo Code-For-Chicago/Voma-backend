@@ -39,6 +39,6 @@ If you are not able to merge, then you'll need to merge the main branch into you
 Additionally in the GitHub pull request, you can add reviewers by clicking the gearbox next to the "Reviewers" section on the right. 
 ![Request Reviewers](how-to-contribute-images/RequestGear.png)
 
-11. Sometimes a reviewer will see changes that need to be made. They may write notes on what you should fix. Repeat steps 4-9 (as well as posting in slack you are ready for another review) if changes are requested. 
+11. Sometimes a reviewer will see changes that need to be made. They may write notes on what you should fix. Repeat steps 4-10 if changes are requested. 
 
 12. Once your changes are approved, then you are ready to merge your branch! Go ahead and merge to main. If you have any merge conflicts, you'll need to resolve those first.
