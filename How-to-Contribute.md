@@ -17,7 +17,7 @@ Click "Change Member" and add yourself.
 4. Do your coding magic. 
 
 5. When you are ready to commit the changes; in your terminal type
-``` git add -A``` to stage your changes and ```git commit -m "Message on what changes you've made"``` to make the commit. 
+``` git add -A``` to stage your changes and ```git commit -m "<Message on what changes you've made>"``` to make the commit. 
 If this is the first commit you've made to this branch you will need to type ```git push --set-upstream origin <branch-name>```
 Otherwise if you've already set the upstream you can just enter ```git push```
 
@@ -34,10 +34,11 @@ If you are not able to merge, then you'll need to merge the main branch into you
 
 9. Move the Trello card from "In Progress" to "Code Review".
 
-10. In the GitHub pull request, you can add reviewers by clicking the gearbox next to the "Reviewers" section on the right. 
-![Request Reviewers](how-to-contribute-images/RequestGear.png)
-Also you will want to post in the 'meta-development' slack channel informing the rest of the team you've made a pull request. Something like "PR ready for review: \<link to github pull request\>". 
+10. You will need to post in the 'meta-development' slack channel informing the rest of the team you've made a pull request. Something like "PR ready for review: \<link to github pull request\>".
 
-11. Sometimes a reviewer will see changes that need to be made. Repeat steps 4-9 (as well as posting in slack you are ready for another review) if changes are requested. 
+Additionally in the GitHub pull request, you can add reviewers by clicking the gearbox next to the "Reviewers" section on the right. 
+![Request Reviewers](how-to-contribute-images/RequestGear.png)
+
+11. Sometimes a reviewer will see changes that need to be made. They may write notes on what you should fix. Repeat steps 4-9 (as well as posting in slack you are ready for another review) if changes are requested. 
 
 12. Once your changes are approved, then you are ready to merge your branch! Go ahead and merge to main. If you have any merge conflicts, you'll need to resolve those first.
