@@ -10,9 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 2021_07_10_005441) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "volunteers", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
+    t.string "slack_user_id"
+    t.string "pronouns"
+    t.string "primary_skills"
+    t.string "secondary_skills"
+    t.string "employer"
+    t.string "student"
+    t.string "assigned_projects"
+    t.string "job_title"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
 
 end
