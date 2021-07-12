@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  email: MyString
+  slack_user_id: MyString
+  pronouns: MyString
+  primary_skills: MyString
+  secondary_skills: MyString
+  employer: MyString
+  student: MyString
+  assigned_projects: MyString
+  job_title: MyString
+
+two:
+  name: MyString
+  email: MyString
+  slack_user_id: MyString
+  pronouns: MyString
+  primary_skills: MyString
+  secondary_skills: MyString
+  employer: MyString
+  student: MyString
+  assigned_projects: MyString
+  job_title: MyString
