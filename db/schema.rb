@@ -18,14 +18,14 @@ ActiveRecord::Schema.define(version: 2021_07_10_005441) do
   create_table "volunteers", force: :cascade do |t|
     t.string "name"
     t.string "email"
-    t.string "slack_user_id"
+    t.string "slackUserId"
     t.string "pronouns"
-    t.string "primary_skills"
-    t.string "secondary_skills"
+    t.string "primarySkills"
+    t.string "secondarySkills"
     t.string "employer"
     t.string "student"
-    t.string "assigned_projects"
-    t.string "job_title"
+    t.string "assignedProjects"
+    t.string "jobTitle"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
