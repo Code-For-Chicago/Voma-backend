@@ -1,6 +1,6 @@
 class Api::V1::VolunteersController < ApplicationController
 
-  # GET /api/vi/volunteers/:id
+  # GET /api/v1/volunteers/:id
   def show
     volunteer = Volunteer.find(params[:id])
     if volunteer
