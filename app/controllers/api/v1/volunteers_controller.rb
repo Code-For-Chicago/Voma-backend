@@ -11,6 +11,7 @@ class Api::V1::VolunteersController < ApplicationController
     end
   end  
   
+  # POST /api/v1/volunteers
   def create
     volunteer_params = {
         name: params[:name],
