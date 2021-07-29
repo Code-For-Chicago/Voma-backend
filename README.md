@@ -30,3 +30,47 @@ Trello
 
 ## How to Contribute Guide
 [How to Contribute to Voma](How-to-Contribute.md)
+
+## 🚀 Setup
+
+**Install Ruby**
+
+https://www.ruby-lang.org/en/documentation/installation/
+
+**Install PostgreSQL**
+
+https://formulae.brew.sh/formula/postgresql
+
+**Install rbenv for environment management**
+
+https://github.com/rbenv/rbenv
+
+### Getting Started
+1. Download the repo `git clone git@github.com:Code-For-Chicago/Voma-backend.git`
+2. Make sure the correct version of Ruby is installed using `rbenv`:
+```
+rbenv init
+rbenv install 2.7.1
+rbenv rehash
+```
+3. Install the dependencies from the Gem file:\
+`bundle install`
+4. Set up the postgres DB:\
+`rake db:setup`
+5. Start up the app:\
+`rails s`
+
+### Troublshooting
+Some issues can arrise if you have different versions of Ruby installed or if you previously weren't using `rbenv`. Some helpful troubleshooting steps are:
+- checking which version of Ruby you are using:\
+`ruby -v`
+- seeing where the ruby executable is being run from (should be in `.rbenv`):\
+`which ruby`
+- checking which `rbenv` versions are installed:\
+`rbenv versions`
+- seeing which gems are installed:\
+`gem list`
+- checking `rbenv local` and `rbenv global` to make sure they are the correct versions
+- running `ruby rehash` which installs shims for all Ruby executables. This usually needs to be done after installing new versions of Ruby or installing a gem that provides commands
+- restarting PostgreSQL using brew:\
+`brew services restart postgresql`
