@@ -18,11 +18,8 @@ class Api::V1::VolunteersController < ApplicationController
         email: params[:email],
         slackUserId: params[:slackUserId],
         pronouns: params[:pronouns],
-        primarySkills: params[:primarySkills],
-        secondarySkills: params[:secondarySkills],
         employer: params[:employer],
         student: params[:student],
-        assignedProjects: params[:assignedProjects],
         jobTitle: params[:jobTitle]
     }
 
