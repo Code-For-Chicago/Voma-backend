@@ -9,8 +9,6 @@ RSpec.describe "API V1 Volunteers", type: :request do
                     email: 'test@example.com',
                     slackUserId: 'slkdfjas39230523',
                     pronouns: "they/them",
-                    primarySkills: "development",
-                    secondarySkills: "facilitation",
                     employer: "test employer",
                     jobTitle: "developer"
                 }
@@ -28,13 +26,11 @@ RSpec.describe "API V1 Volunteers", type: :request do
                 email: 'test@example.com',
                 slackUserId: 'slkdfjas39230523',
                 pronouns: "they/them",
-                primarySkills: "development",
-                secondarySkills: "facilitation",
                 employer: "test employer",
                 jobTitle: "developer"
             }
         end
-            it "fails to createa a new volunteer" do
+            it "fails to create a new volunteer" do
                 expect { post "/api/v1/volunteers", params: invalid_params}.to change(Volunteer, :count).by(0)
                 expect(response).to have_http_status :bad_request 
             end 
