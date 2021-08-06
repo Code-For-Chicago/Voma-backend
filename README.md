@@ -53,15 +53,17 @@ rbenv init
 rbenv install 2.7.1
 rbenv rehash
 ```
-3. Install the dependencies from the Gem file:\
+3. Install the bundler to manage dependencies:\
+`gem install bundler`
+4. Install the dependencies from the Gem file:\
 `bundle install`
-4. Set up the postgres DB:\
+5. Set up the postgres DB:\
 `rake db:setup`
-5. Start up the app:\
+6. Start up the app:\
 `rails s`
 
-### Troublshooting
-Some issues can arrise if you have different versions of Ruby installed or if you previously weren't using `rbenv`. Some helpful troubleshooting steps are:
+### Troubleshooting
+Some issues can arise if you have different versions of Ruby installed or if you previously weren't using `rbenv`. Some helpful troubleshooting steps are:
 - checking which version of Ruby you are using:\
 `ruby -v`
 - seeing where the ruby executable is being run from (should be in `.rbenv`):\
