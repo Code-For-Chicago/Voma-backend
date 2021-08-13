@@ -6,11 +6,14 @@ build:
 start:
 	docker-compose up -d
 
-rspec:
-	docker-compose run -e "RAILS_ENV=test" web rspec spec/
-
 start-nobackground:
 	docker-compose up
+
+stop:
+	docker-compose stop
+
+rspec:
+	docker-compose run -e "RAILS_ENV=test" web rspec spec/
 
 db_dev_migrate:
 	docker-compose run web rake db:create && docker-compose run web rake db:migrate
