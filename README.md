@@ -31,6 +31,52 @@ Trello
 ## How to Contribute Guide
 [How to Contribute to Voma](How-to-Contribute.md)
 
+## 🚀 Setup
+
+**Install Ruby**
+
+https://www.ruby-lang.org/en/documentation/installation/
+
+**Install PostgreSQL**
+
+https://formulae.brew.sh/formula/postgresql
+
+**Install rbenv for environment management**
+
+https://github.com/rbenv/rbenv
+
+### Getting Started
+1. Download the repo `git clone git@github.com:Code-For-Chicago/Voma-backend.git`
+2. Make sure the correct version of Ruby is installed using `rbenv`:
+```
+rbenv init
+rbenv install 2.7.1
+rbenv rehash
+```
+3. Install the bundler to manage dependencies:\
+`gem install bundler`
+4. Install the dependencies from the Gem file:\
+`bundle install`
+5. Set up the postgres DB:\
+`rake db:setup`
+6. Start up the app:\
+`rails s`
+
+### Troubleshooting
+Some issues can arise if you have different versions of Ruby installed or if you previously weren't using `rbenv`. Some helpful troubleshooting steps are:
+- checking which version of Ruby you are using:\
+`ruby -v`
+- seeing where the ruby executable is being run from (should be in `.rbenv`):\
+`which ruby`
+- checking which `rbenv` versions are installed:\
+`rbenv versions`
+- seeing which gems are installed:\
+`gem list`
+- checking `rbenv local` and `rbenv global` to make sure they are the correct versions
+- running `ruby rehash` which installs shims for all Ruby executables. This usually needs to be done after installing new versions of Ruby or installing a gem that provides commands
+- restarting PostgreSQL using brew:\
+`brew services restart postgresql`
+
 ## How to run the API using Docker
 
 1. The first thing you'll need to do is install the service on you machine. These [installation instructions](https://docs.docker.com/engine/install/) over at the docker docs site are handy for this part. 
